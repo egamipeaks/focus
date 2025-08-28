@@ -5,6 +5,12 @@ use App\Livewire\Settings\Password;
 use App\Livewire\Settings\Profile;
 use Illuminate\Support\Facades\Route;
 
+Route::get('/focus', function () {
+    return view('focus', [
+        'title' => 'Focus',
+    ]);
+})->name('focus');
+
 Route::get('/', function () {
     return view('welcome');
 })->name('home');
